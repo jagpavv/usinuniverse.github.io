@@ -3,8 +3,6 @@ title: 컬렉션 타입
 layout: post
 ---
 
-# 컬렉션 타입
-
 ### 컬렉션 타입
 
 * Swift는 값의 모음을 저장하기 위해 배열(Array), 집합(Set), 사전(Dictionary), 튜플(Tuple)을 제공한다.
