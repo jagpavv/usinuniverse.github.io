@@ -1,6 +1,7 @@
 ---
 title: 변수와 상수
 layout: post
+order: 1
 ---
 
 # 변수와 상수
