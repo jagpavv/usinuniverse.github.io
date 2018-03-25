@@ -1,5 +1,5 @@
 ---
-title: Third Post
+title: 변수와 상수
 layout: post
 ---
 
