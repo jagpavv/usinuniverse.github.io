@@ -29,7 +29,7 @@ layout: post
 * 모든 iOS 앱의 핵심은 UIApplication 객체이며, 이 객체는 시스템과 앱 안의 다른 객체들과의 상호작용을 용이하게 한다.
 * 아래의 그림은 일반적인 앱에서 발견할 수 있는 객체들을 나타내며, 해당 객체들의 역할을 나타낸다.
 * 또한, 알아야할 것은 iOS 앱은 MVC 패턴을 이용한다는 것이다.
-* [MVC 패턴이란?](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-01-30-01mvcpattern.md)
+* [MVC 패턴이란?](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2017-11-01-mvcpattern.md)
 * 이 패턴은 다른 스크린 사이즈의 장치에서도 똑같이 작동하기 위해 중요하다.
 
 <img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-29/01.png?raw=true">
