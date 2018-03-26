@@ -7,7 +7,7 @@ layout: post
 
 ### UI 구현
 
-[![Bullseye](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/img/thumbnail/Bullseye.png?raw=true)](https://vimeo.com/239829882)
+[![Bullseye](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/project%20images/04/01.png?raw=true)](https://vimeo.com/239829882)
 
 * 클릭하면 구동 영상을 감상할 수 있습니다.
 
