@@ -114,16 +114,16 @@ class TestTableViewController: UITableViewController, XMLParserDelegate {
 
 * 실행결과는 다음과 같다.
 
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/11-07/01.png?raw=true" width="40%">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-21/01.png?raw=true" width="40%">
 
 * 간혹 다음과 같은 오류가 뜨는 경우가 있다.
 
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/11-07/02.png?raw=true">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-21/02.png?raw=true">
 
 * 위의 오류는 SSL 보안 프로토콜이 적용되어 있지않아 ATS 보안 설정없이 접속하게 되면 정상적인 통신이 불가능하여 생기는 오류이다.
 * 따라서 ATS 설정을 추가해야 서버에서 데이터를 읽어올 수 있다.
 * 다음은 ATS 설정하는 방법이다.
 
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/11-07/03.png?raw=true">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-21/03.png?raw=true">
 
 * 위처럼 info.plist에서 App Transport Security Settings -> Allow Arbitrary Loads -> YES 설정을 하면 정상적으로 접근할 수 있다.
