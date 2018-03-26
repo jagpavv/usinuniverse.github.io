@@ -12,7 +12,7 @@ layout: post
 * 이 이벤트는 앱에 의해 하나씩 내부의 대기열에 넣어지고 메인 실행 루프에 하나씩 전달된다.
 * UIApplication 객체는 이 이벤트를 수신하여 어떤 작업을 할지를 결정하게 된다.
 
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/18-01-29/01.png?raw=true">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-30/01.png?raw=true">
 
 ### 이벤트의 유형들
 
