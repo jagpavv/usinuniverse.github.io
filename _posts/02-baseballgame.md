@@ -1,6 +1,7 @@
 ---
 title: 숫자 야구 게임
 layout: post
+hide: true
 ---
 
 # 두번째 연습 - 숫자 야구 게임

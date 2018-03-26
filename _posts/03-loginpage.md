@@ -1,6 +1,7 @@
 ---
 title: 로그인 페이지 구현
 layout: post
+hide: true
 ---
 
 # 세번째 연습 - 로그인 페이지 구현

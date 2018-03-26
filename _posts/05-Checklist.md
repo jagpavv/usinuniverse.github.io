@@ -1,6 +1,7 @@
 ---
 title: 체크리스트
 layout: post
+hide: true
 ---
 
 # 다섯번째 연습 - 체크리스트

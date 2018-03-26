@@ -1,6 +1,7 @@
 ---
 title: 숫자 맞추기 게임
 layout: post
+hide: true
 ---
 
 # 네번째 연습 - 숫자 맞추기 게임

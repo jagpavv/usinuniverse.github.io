@@ -1,6 +1,7 @@
 ---
 title: 자판기 앱
 layout: post
+hide: true
 ---
 
 # 첫번째 연습 - 자판기 앱

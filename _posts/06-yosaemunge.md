@@ -1,6 +1,7 @@
 ---
 title: 요새먼지
 layout: post
+hide: true
 ---
 
 # 요새먼지
