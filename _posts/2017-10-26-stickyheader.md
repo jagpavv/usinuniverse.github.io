@@ -8,7 +8,7 @@ layout: post
 * 스티키 헤더란? 컬렉션뷰의 헤더 영역이 바로 스크롤되어 사라지지 않고 해당 섹션이 끝나 다음 섹션을 만날때까지 유지되는 것을 칭한다.
 * 스티키 헤더가 없을 때에는 다음과 같다.
 
-[![stickyheader](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/11-15/02.png?raw=true)](https://vimeo.com/242765042)
+[![stickyheader](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-26/01.png?raw=true)](https://vimeo.com/242765042)
 
 * 클릭하면 구동 영상을 감상할 수 있습니다.
 
@@ -84,6 +84,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
 * 결과는 다음과 같다.
 
-[![stickyheader](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/11-15/01.png?raw=true)](https://vimeo.com/242765068)
+[![stickyheader](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-26/02.png?raw=true)](https://vimeo.com/242765068)
 
 * 클릭하면 구동 영상을 감상할 수 있습니다.
