@@ -6,7 +6,7 @@ layout: post
 ### MVC 패턴이란?
 * Model - View - Controller 의 약자로 각각의 역할에 따라 나누어 부피가 커져도 유지보수가 용이하도록 만든 디자인 패턴이다.
 * MVC 패턴을 사용하면 객체들의 재사용성이 높아지고, 쉽게 확장할 수 있다.
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/18-01-30/01.png?raw=true">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-11-01/01.png?raw=true">
 
 ### Model
 * Model은 데이터를 담당한다.
