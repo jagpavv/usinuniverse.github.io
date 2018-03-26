@@ -32,7 +32,7 @@ layout: post
 * [MVC 패턴이란?](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-01-30-01mvcpattern.md)
 * 이 패턴은 다른 스크린 사이즈의 장치에서도 똑같이 작동하기 위해 중요하다.
 
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/18-01-28/01.png?raw=true">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-29/01.png?raw=true">
 
 ### iOS 앱에서 객체들의 역할
 
