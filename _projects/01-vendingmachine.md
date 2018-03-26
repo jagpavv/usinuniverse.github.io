@@ -7,7 +7,7 @@ layout: post
 
 ### UI 구현
 
-[![VendingMachine](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/img/thumbnail/VendingMachine.png?raw=true)](https://vimeo.com/255879542)
+[![VendingMachine](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/project%20images/01/01.png?raw=true)](https://vimeo.com/255879542)
 
 * 클릭하면 구동 영상을 감상할 수 있습니다.
 
