@@ -64,7 +64,7 @@ extension ViewController: UIScrollViewDelegate {
 
 * 결과는 다음과 같다.
 
-[![stickyheader](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/11-29/01.png?raw=true)](https://vimeo.com/244973382)
+[![stickyheader](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-28/01.png?raw=true)](https://vimeo.com/244973382)
 
 * 클릭하면 구동 영상을 감상할 수 있습니다.
 
@@ -74,9 +74,9 @@ extension ViewController: UIScrollViewDelegate {
 
 * 아래는 코드와 스토리보드를 통해 설정할 수 있는 방법을 각각 보여준다.
 
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/11-29/02.png?raw=true">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-28/02.png?raw=true">
 
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/11-29/03.png?raw=true">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-28/03.png?raw=true">
 
 
  
