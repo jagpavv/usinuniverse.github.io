@@ -61,6 +61,6 @@ class Location {
 
 * 실행결과는 다음과 같다.
 
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/11-20/01.png?raw=true">
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/11-20/02.png?raw=true">
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/11-20/03.png?raw=true">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-27/01.png?raw=true">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-27/02.png?raw=true">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-27/03.png?raw=true">
