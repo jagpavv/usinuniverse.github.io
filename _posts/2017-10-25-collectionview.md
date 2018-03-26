@@ -64,6 +64,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
 * 실행결과는 다음과 같다.
 
-[![collectionView](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/11-14/01.png?raw=true)](https://vimeo.com/242764972)
+[![collectionView](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-25/01.png?raw=true)](https://vimeo.com/242764972)
 
 * 클릭하면 구동 영상을 감상할 수 있습니다.
