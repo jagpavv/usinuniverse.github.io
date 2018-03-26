@@ -9,7 +9,7 @@ layout: post
 * 시스템은 시스템 전체에서 일어나는 일에 응답하며 앱의 상태를 변화시킨다.
 * 가령 유저가 홈 버튼을 누르거나, 전화가 오거나, 혹은 다른 몇 가지 중단이 발생하면 앱의 상태가 변경된다.
 
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/18-01-29/02.png?raw=true">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-10-31/01.png?raw=true">
 
 * Not running -> 앱이 실행되지 않았거나 혹은 시스템에 의해 종료된 상태
 * Inactive -> 앱이 foreground에 실행되어 있지만 이벤트를 받지 않고 있는 상태. 보통 다른 상태로 전환될 때 잠깐 동안 이 상태에 머물러 있는다. (다른 코드를 실행 중일 수도 있다.)
