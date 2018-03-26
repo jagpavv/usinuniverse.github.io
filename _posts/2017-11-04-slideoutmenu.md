@@ -10,7 +10,7 @@ layout: post
 * 이때 View 에는 열림, Slide out menu view 에는 닫기 버튼을 만들었다.
 * 이 버튼들로 constraints를 조정해 Slide out 효과를 구현한다.
 
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/18-02-02/01.png?raw=true">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-11-04/01.png?raw=true">
 
 ### Source code 세팅
 * ViewController.swift
@@ -64,5 +64,5 @@ class ViewController: UIViewController {
 * 다음과 같이 작동하는 것을 볼 수 있다. (다양하게 응용가능)
 * GIF 품질 때문에 Slide out menu view가 view 전체를 덮는 것 같지만, 실제론 미리 정해둔 가로 길이만큼만 나온다.
 
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/postingIMG/18-02-02/02.gif?raw=true" width="50%">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/17-11-04/02.gif?raw=true" width="50%">
 
