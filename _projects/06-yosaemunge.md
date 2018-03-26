@@ -9,7 +9,7 @@ layout: post
 
 ### UI 구현
 
-[![Yosaemunge](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/img/thumbnail/Yosaemunge.png?raw=true)](https://vimeo.com/252505685)
+[![Yosaemunge](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/project%20images/06/01.png?raw=true)](https://vimeo.com/252505685)
 
 * 클릭하면 구동 영상을 감상할 수 있습니다.
 
