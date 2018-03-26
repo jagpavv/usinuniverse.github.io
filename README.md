@@ -1,2 +1,1 @@
-# https://usinuniverse.github.io
-# iOS 개발 블로그
+# [iOS 개발 블로그 바로가기](https://usinuniverse.github.io)
