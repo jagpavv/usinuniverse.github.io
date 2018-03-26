@@ -1,0 +1,154 @@
+---
+title: 숫자 맞추기 게임
+layout: post
+---
+
+# 네번째 연습 - 숫자 맞추기 게임
+
+### UI 구현
+
+[![Bullseye](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/img/thumbnail/Bullseye.png?raw=true)](https://vimeo.com/239829882)
+
+* 클릭하면 구동 영상을 감상할 수 있습니다.
+
+### 게임 룰
+
+* 내가 맞춰야 할 점수를 슬라이더를 통해 정확히 입력하면 정답!
+* 정답을 맞추지 못한 경우에는 'Round'가 1회씩 증가한다. 즉 시도한 횟수가 Round가 된다.
+* 가장 적은 시도로 정답을 맞추는 것이 게임의 목표
+* 정답을 맞출때마다 시도 횟수는 명예의 전당에 기록된다.
+
+### 기술 구현
+
+* 앱을 처음 실행했을 때 '새게임'버튼을 누르지 않으면 게임을 진행할 수 없게 제한했다.
+* 또한, 정답을 맞췄을 경우에도 '새게임'버튼을 통해 게임을 새롭게 진행하게 했다.
+* 내비게이션 뷰 컨트롤러를 이용하여 명예의 전당으로 오고 갈 수 있도록 했다.
+* 뷰 컨트롤러간 데이터 전달
+* 테이블 뷰를 통해 순위를 보여줬다.
+
+### 어려웠던 점
+
+* 뷰 컨트롤러간의 데이터 전달
+
+```
+뷰 컨트롤러간의 데이터 전달에서 가장 어려웠던 부분은 화면 전환의 구조였다.
+스토리보드상에서는 '명예의 전당' 버튼과 '명예의 전당'의 결과가 보여질 테이블 뷰를 세그웨이로 연결했지만, 
+값을 전달할 수 있는 prepare 메소드를 쓰지 않았으며
+소스코드상에서는 내비게이션 뷰 컨트롤러가 테이블 뷰 인스턴스를 생성해 데이터를 전달했지만,
+테이블 뷰 인스턴스를 푸시하지 않았다.
+결과적으로 소스코드상에서 만들어진 인스턴스와 세그웨이를 통해 띄워진 인스턴스가 서로 다른 인스턴스가 된 것이다.
+메인 뷰 컨트롤러가 내비게이션 뷰 컨트롤러인만큼 테이블 뷰 인스턴스를 생성하여 푸시하는 방법으로 해결했다.
+```
+
+### 코드
+
+* ViewController.swift
+
+```swift
+import UIKit
+
+class ViewController: UIViewController {
+    // 정답값
+    @IBOutlet var correctValue: UILabel!
+    // 라운드 레이블
+    @IBOutlet var roundInfo: UILabel!
+    // 라운드 숫자
+    var roundNumber: Int = 1
+    // 슬라이더 값
+    @IBOutlet var setValue: UISlider!
+    // 명예의 전당
+    var hallOfFames: [Int] = []
+    // 게임 진행중 여부
+    var isRunningGame: Bool = false
+    
+    
+    
+    // 확인버튼
+    @IBAction func confirmValue(_ sender: UIButton) {
+        // 게임 진행중 여부 파악
+        // 진행중이지 않을 시 새게임 버튼 클릭 유도
+        guard isRunningGame == true else {
+            presentAlert(message: "새게임을 시작하세요")
+            return
+        }
+        // 슬라이더의 값이 정답과 일치할 때
+        if correctValue.text == String(Int(setValue.value)) {
+            matchValue()
+        } else {
+        // 슬라이더의 값이 정답과 일치하지 않을 때
+        notMatch()
+        }
+    }
+    
+    // 정답을 맞췄을 때 메시지 출력, 기록 저장, 게임 진행 불가로 변경
+    func matchValue() {
+        presentAlert(message: "축하합니다 :-)\n매의 눈을 가지셨네요!!")
+        isRunningGame = false
+        hallOfFames.append(roundNumber)
+    }
+    
+    // 정답을 맞추지 못했을 때 메시지 출력, 슬라이더 초기화, 라운드 증가
+    func notMatch() {
+        presentAlert(message: "안타까워요 :-(\n입력하신 점수는 \(Int(self.setValue.value))입니다.")
+        setValue.setValue(50, animated: true)
+        self.roundNumber += 1
+        self.roundInfo.text = "Round \(roundNumber)"
+    }
+    
+    // 알림창 만들기
+    func presentAlert(message: String) {
+        let alert: UIAlertController = UIAlertController(title: "확인결과", message: message, preferredStyle: .alert)
+        let alertAction: UIAlertAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+        alert.addAction(alertAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    // 새게임
+    // 모든 값 초기화, 게임 진행 가능으로 변경
+    @IBAction func newGame(_ sender: UIButton) {
+        self.roundInfo.text = "Round 1"
+        self.roundNumber = 1
+        self.setValue.setValue(50, animated: true)
+        self.isRunningGame = true
+        self.correctValue.text = String(arc4random_uniform(100)+1)
+    }
+    
+    // 명예의 전당으로 정보 전달
+    @IBAction func hallOfFame(_ sender: UIButton) {
+        guard let hof = self.storyboard?.instantiateViewController(withIdentifier: "HOF") as? HallOfFameTableViewController else { return }
+        hof.hallOfFames = self.hallOfFames.sorted(by: <)
+        navigationController?.pushViewController(hof, animated: true)
+    }
+}
+```
+
+* HallOfFameTableViewController.swift
+
+```swift
+import UIKit
+
+class HallOfFameTableViewController: UITableViewController {
+    // 전달받을 배열
+    var hallOfFames: [Int] = []
+    
+    
+    
+    // 섹션 생성
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    // 로우 생성
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.hallOfFames.count
+    }
+    
+    // 셀 생성
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "\(indexPath.row + 1)등은 \(hallOfFames[indexPath.row])만에 정답!!)"
+        cell.textLabel?.textAlignment = .center
+        return cell
+    }
+}
+```
