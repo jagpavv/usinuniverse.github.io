@@ -5,9 +5,9 @@ icon: fa-book
 order: 3
 ---
 
-### 인적사항~
+### 인적사항
 
-* 안재형 - 1989.03.30 - usinuniverse@gmail.com
+* 안재형 - 1989.03.30 / usinuniverse@gmail.com
 
 ### 경력
 
