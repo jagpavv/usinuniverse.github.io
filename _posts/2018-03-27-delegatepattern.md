@@ -9,7 +9,7 @@ layout: post
 * VC1 에서 VC2로 이동 후, VC2에서 입력한 값을 VC1에서 가져오는 형식으로 진행된다.
 * 스토리보드는 다음과 같이 만든다.
 
-<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/18-03-27/01.png">
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/18-03-27/01.png?raw=true">
 
 ### VC1
 
