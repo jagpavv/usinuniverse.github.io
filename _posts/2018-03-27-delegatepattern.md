@@ -100,7 +100,7 @@ class VC2: UIViewController {
 
 ### 결과 확인
 
-* [클릭하시면 구동 영상을 감상할 수 있습니다](https://vimeo.com/261947959)
+* [클릭하면 구동 영상을 감상할 수 있습니다.](https://vimeo.com/261947959)
 
 
 
