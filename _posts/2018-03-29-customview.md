@@ -29,6 +29,8 @@ layout: post
 * 여기서 중요한 것은 커스텀뷰 초기화 메서드를 정의해야만 한다. (메서드의 이름은 중요하지 않고 내용이 중요)
 * 코드는 다음과 같다.
 
+<img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/18-03-29/06.png?raw=true">
+
 ### CustomView.swift
 
 ```swift
