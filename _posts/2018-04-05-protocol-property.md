@@ -15,6 +15,11 @@ protocol SomeProtocol {
     var readOnly: String { get } // 읽기 전용
     var readAndWrite: String { get set } // 읽고 쓰기
 }
+
+class SomeClass: SomeProtocol {
+    let readOnly: String = "읽기 전용" // 가능
+    let readAndWrite: String = "읽고 쓰기" // 에러
+}
 ```
 
 ### 읽기 전용
