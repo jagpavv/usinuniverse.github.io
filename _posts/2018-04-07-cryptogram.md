@@ -39,9 +39,9 @@ do {
     print(ciphertext.toHexString()) // 7890fcb7e96cf449d912bff0d0774e62c9029a68b50770742ee0dfd97db708ee
     
     // 복호화
-    let plaintext = try aes.decrypt(ciphertext)
-    if let string = String(bytes: plaintext, encoding: .utf8) {
-        print(string) // "이건 암호문입니다."
+    let toDecryptText = try aes.decrypt(ciphertext)
+    if let plaintext = String(bytes: toDecryptText, encoding: .utf8) {
+    print(plaintext) // "이건 암호문입니다."
     }
 } catch {
     print(error)
