@@ -11,7 +11,8 @@ layout: post
 
 ### 블럭 암호 운용 방식
 
-* 블럭 암호 운용 방식은 하나의 키로 블럭 암호를 반복적으로 안전하게 이용하는 절차를 말한다.
+* 블럭 암호 운용 방식은 하나의 키와 초기화벡터로 블럭 암호를 반복적으로 안전하게 이용하는 절차를 말한다.
+* 키(key)는 암호화,복호화 시에 사용되며 128비트, 256비트와 같이 알고리즘에서 요구하는 길이를 사용해야 하므로 16바이트 또는 32바이트가 되어야 한다.)
 * 초기화벡터(Initialization Vector, IV) 는 첫 블럭을 암호화할때 사용되는 값을 의미한다. (CBC 모드에서 가장 첫 블럭은 1단계 앞의 암호문 블럭이 존재하지 않기 때문)
 * CBC 모드에서는 평문이 반드시 1단계 앞의 암호문과 XOR 연산 후 암호화 된다. [AND, OR, XOR 비트연산](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-04-07-cryptogram.md#%EB%B9%84%ED%8A%B8%EC%97%B0%EC%82%B0)
 * IV는 키와 마찬가지로 송수신자 사이에 미리 약속되어 있어야 하지만 공개된 값을 사용해도 무방하다.
@@ -32,19 +33,52 @@ layout: post
 ```swift
 import CryptoSwift
 
+let key = "p a s s w o r d ".bytes // 16바이트의 키 생성
+let iv = "d r o w s s a p ".bytes // 16바이트의 초기화벡터 생성
+let plaintext = "안녕하세요. 1급 비밀을 전달합니다. 블라블라~"
+
+// ECB 모드
 do {
-    let aes = try AES(key: "passwordpassword", iv: "drowssapdrowssap")
-    
     // 암호화
-    let ciphertext = try aes.encrypt(Array("이건 암호문입니다.".utf8))
-    print(ciphertext) // [120, 144, 252, 183, 233, 108, 244, 73, 217, 18, 191, 240, 208, 119, 78, 98, 201, 2, 154, 104, 181, 7, 112, 116, 46, 224, 223, 217, 125, 183, 8, 238]
-    print(ciphertext.toHexString()) // 7890fcb7e96cf449d912bff0d0774e62c9029a68b50770742ee0dfd97db708ee
+    let encrypted = try AES(key: key, blockMode: .ECB, padding: .pkcs7).encrypt(plaintext.bytes)
+    print(encrypted) // [160, 48, 156, 182, 178, 99, 10, 81, 132, 75, 65, 167, 151, 163, 131, 118, 252, 184, 125, 76, 106, 241, 152, 29, 51, 113, 88, 10, 2, 245, 37, 152, 16, 96, 137, 91, 243, 30, 157, 63, 86, 157, 30, 80, 11, 199, 127, 35, 102, 80, 31, 241, 128, 128, 187, 248, 100, 17, 98, 44, 209, 96, 230, 204]
+    print(encrypted.toHexString()) // a0309cb6b2630a51844b41a797a38376fcb87d4c6af1981d3371580a02f525981060895bf31e9d3f569d1e500bc77f2366501ff18080bbf86411622cd160e6cc
     
     // 복호화
-    let toDecryptText = try aes.decrypt(ciphertext)
-    if let plaintext = String(bytes: toDecryptText, encoding: .utf8) {
-    print(plaintext) // "이건 암호문입니다."
-    }
+    let decrypted = try AES(key: key, blockMode: .ECB, padding: .pkcs7).decrypt(encrypted)
+    print(decrypted) // [236, 149, 136, 235, 133, 149, 237, 149, 152, 236, 132, 184, 236, 154, 148, 46, 32, 49, 234, 184, 137, 32, 235, 185, 132, 235, 176, 128, 236, 157, 132, 32, 236, 160, 132, 235, 139, 172, 237, 149, 169, 235, 139, 136, 235, 139, 164, 46, 32, 235, 184, 148, 235, 157, 188, 235, 184, 148, 235, 157, 188, 126]
+    print(String(bytes: decrypted, encoding: .utf8)!) // 안녕하세요. 1급 비밀을 전달합니다. 블라블라~
+} catch {
+    print(error)
+}
+
+// CBC 모드
+do {
+    // 암호화
+    let encrypted = try AES(key: key, blockMode: .CBC(iv: iv), padding: .pkcs7).encrypt(plaintext.bytes)
+    print(encrypted) // [187, 181, 61, 114, 215, 25, 208, 113, 242, 222, 198, 94, 250, 255, 108, 195, 230, 76, 51, 224, 220, 231, 116, 144, 240, 253, 48, 174, 33, 240, 238, 228, 190, 29, 215, 133, 139, 126, 54, 96, 132, 18, 230, 253, 43, 49, 124, 121, 166, 240, 76, 9, 160, 156, 63, 248, 219, 40, 184, 194, 99, 33, 83, 34]
+    print(encrypted.toHexString()) // bbb53d72d719d071f2dec65efaff6cc3e64c33e0dce77490f0fd30ae21f0eee4be1dd7858b7e36608412e6fd2b317c79a6f04c09a09c3ff8db28b8c263215322
+    
+    // 복호화
+    let decrypted = try AES(key: key, blockMode: .CBC(iv: iv), padding: .pkcs7).decrypt(encrypted)
+    print(decrypted) // [236, 149, 136, 235, 133, 149, 237, 149, 152, 236, 132, 184, 236, 154, 148, 46, 32, 49, 234, 184, 137, 32, 235, 185, 132, 235, 176, 128, 236, 157, 132, 32, 236, 160, 132, 235, 139, 172, 237, 149, 169, 235, 139, 136, 235, 139, 164, 46, 32, 235, 184, 148, 235, 157, 188, 235, 184, 148, 235, 157, 188, 126]
+    print(String(bytes: decrypted, encoding: .utf8)!) // 안녕하세요. 1급 비밀을 전달합니다. 블라블라~
+} catch {
+    print(error)
+}
+
+// 간소화 모드
+do {
+    // 암호화
+    let aes = try AES(key: "p a s s w o r d ", iv: "d r o w s s a p ")
+    let encrypted = try aes.encrypt("안녕하세요. 1급 비밀을 전달합니다. 블라블라~".bytes)
+    print(encrypted) // [187, 181, 61, 114, 215, 25, 208, 113, 242, 222, 198, 94, 250, 255, 108, 195, 230, 76, 51, 224, 220, 231, 116, 144, 240, 253, 48, 174, 33, 240, 238, 228, 190, 29, 215, 133, 139, 126, 54, 96, 132, 18, 230, 253, 43, 49, 124, 121, 166, 240, 76, 9, 160, 156, 63, 248, 219, 40, 184, 194, 99, 33, 83, 34]
+    print(encrypted.toHexString()) // bbb53d72d719d071f2dec65efaff6cc3e64c33e0dce77490f0fd30ae21f0eee4be1dd7858b7e36608412e6fd2b317c79a6f04c09a09c3ff8db28b8c263215322
+    
+    // 복호화
+    let decrypted = try aes.decrypt(encrypted)
+    print(decrypted) // [236, 149, 136, 235, 133, 149, 237, 149, 152, 236, 132, 184, 236, 154, 148, 46, 32, 49, 234, 184, 137, 32, 235, 185, 132, 235, 176, 128, 236, 157, 132, 32, 236, 160, 132, 235, 139, 172, 237, 149, 169, 235, 139, 136, 235, 139, 164, 46, 32, 235, 184, 148, 235, 157, 188, 235, 184, 148, 235, 157, 188, 126]
+    print(String(bytes: decrypted, encoding: .utf8)!) // 안녕하세요. 1급 비밀을 전달합니다. 블라블라~
 } catch {
     print(error)
 }
