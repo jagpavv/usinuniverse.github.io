@@ -70,7 +70,7 @@ do {
     print(error)
 }
 
-// 간소화 모드
+// 간소화 모드 (CBC 알고리즘)
 do {
     // 암호화
     let aes = try AES(key: "p a s s w o r d ", iv: "d r o w s s a p ")
