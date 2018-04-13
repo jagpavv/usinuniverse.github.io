@@ -70,6 +70,8 @@ do {
     print(error)
 }
 
+
+
 // 간소화 모드 (CBC 알고리즘)
 do {
     // 암호화
@@ -85,6 +87,51 @@ do {
 } catch {
     print(error)
 }
+```
+
+### SEED 128
+
+```swift
+...
+Objective-C Bridging Header.h
+...
+
+import CryptoSwift
+
+// SEED 사용
+var key = "passwordpassword".bytes // 16바이트의 키 생성
+var iv = "passwordpassword".bytes // 16바이트의 초기화벡터 생성
+var plaintext = "안녕하세요.".bytes // 암호화될 평문 생성 (16바이트로 생성됨)
+
+var ciphertext = "                                ".bytes // 출력버퍼 생성 (입력버퍼보다 16바이트 크게 확보하는 것이 좋음 -> 암호화될 평문(입력 버퍼): 16바이트 // 출력될 암호문(출력 버퍼): 32바이트
+print(ciphertext) // [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32]
+var plaintext_ = "                                ".bytes // 복호화시 필요한 출력버퍼 생성 (위와 동일하게 16바이트 추가 확보)
+print(plaintext_) // [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32]
+
+
+
+// 암호화
+// KISA_SEED_CBC_ENCRYPT 함수는 암호화가 성공하면 암호문의 길이를 리턴해준다. 암호문은 ciphertext 변수에 바로 적용된다. 왜냐? & 연산자를 썼기 때문.
+var outlen = KISA_SEED_CBC_ENCRYPT(&key, &iv, &plaintext, 16, &ciphertext) // C로 된 함수가 포팅되기 때문에 UnsafeMutablePointer<UInt8> 이 인자값으로 쓰인다. 하지만 Swift에서는 포인터 개념이 없기 때문에 & 연산자를 통해 메모리 주소값을 바로 보낼 수 있다. (이 SEED 함수 쓰려고 4일동안 찾아다니다 혼자 시도해본게 성공 ㅡ.ㅡ 아무도 안알려주고 어디에도 정보가 없다...)
+print(ciphertext) // [18, 69, 23, 167, 212, 215, 104, 251, 46, 225, 184, 4, 97, 49, 195, 181, 130, 108, 249, 15, 28, 183, 249, 111, 176, 64, 134, 20, 161, 159, 32, 10]
+// 처음과 다르게 ciphertext의 바이트가 변경된 것을 알 수 있다! -> 고로 암호문이 입력되었음을 알 수 있다.
+
+// 복호화
+outlen = KISA_SEED_CBC_DECRYPT(&key, &iv, &ciphertext, UInt32(outlen), &plaintext_)
+print(plaintext_) // [236, 149, 136, 235, 133, 149, 237, 149, 152, 236, 132, 184, 236, 154, 148, 46, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16]
+// 마찬가지로 plaintext_의 바이트가 처음과 다름을 알 수 있다! -> 고로 암호문이 복호화 되었음을 알 수 있다.
+
+// 마지막 작업으로 복호화된 문장의 패딩을 셀프로 제거해야한다 ㅡ.ㅡ...
+let count = Int(outlen) // outlen은 UInt32기 때문에 편의를 위해 Int로 변경. (참고로 outlen은 아까 말했듯 암,복호화 성공시 암호문의 길이를 리턴해준다. 여기서 Outlen은 16, 아까 암호화했을땐 outlen이 32였다.)
+var removedPadding = [UInt8]() // 패딩이 제거된 바이트들이 저장될 UInt8 배열 생성
+
+// 패딩은 제거하고 실제 필요한 바이트들만 배열에 담는다.
+for i in 0...(count - 1) {
+    removedPadding.append(plaintext_[i])
+}
+
+// 패딩이 제거된 바이트들을 인코딩하면 완성!!!
+print(String(bytes: removedPadding, encoding: .utf8)!) // 안녕하세요.
 ```
 
 ### BIP 0039
