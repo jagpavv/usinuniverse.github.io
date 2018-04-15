@@ -1,9 +1,9 @@
 ---
-title: 사이즈 클래스 이용하여 화면 구성하기
+title: 사이즈 클래스 이용하기
 layout: post
 ---
 
-### 사이즈 클래스 이용하여 화면 구성하기
+### 사이즈 클래스 이용하기
 
 <img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/18-04-11/06.png?raw=true">
 
