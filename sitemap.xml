@@ -1,29 +1,302 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
-        {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-        {% endif %}
-        
-        {% if post.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
-        {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-        {% endif %}
-        
-        {% if post.sitemap.priority == null %}
-        <priority>0.5</priority>
-        {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-        {% endif %}
-        
-    </url>
-    {% endfor %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://usinuniverse.github.io/</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/blog.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/reading-list.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2018/01/23/yosaemunge.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/11/06/checklist.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/25/bullseye.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/17/loginpage.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/12/baseballgame.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/09/20/vendingmachine.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2018/04/13/bitbyte.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2018/04/11/sizeclass.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2018/04/07/cryptogram.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2018/04/06/codable.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2018/04/05/protocol-property.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2018/04/04/accesscontrol.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2018/04/03/computedproperty.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2018/03/30/addattributed.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2018/03/29/customview.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2018/03/28/viewsizecontrol.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2018/03/27/delegatepattern.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/11/07/delegatevsnotification.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/11/06/treedatastructure.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/11/05/unitest.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/11/04/slideoutmenu.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/11/03/httprequest.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/11/02/jsonparsing.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/11/01/mvcpattern.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/31/applifecycle.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/30/applifecycle.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/29/applifecycle.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/28/pagecontrol.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/27/searchbar.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/26/stickyheader.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/25/collectionview.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/24/stringencoding.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/23/geocode.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/22/location.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/21/xmlparsing.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/20/alert.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/19/deliver.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/18/transfer.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/17/error-handling.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/16/protocol.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/15/extension.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/14/enumeration.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/13/inheritance.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/12/method.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/11/property.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/10/class&amp;structure.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/09/function(3).html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/08/function(2).html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/07/function(1).html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/06/optional.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/05/collection-type.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/04/conditional-statement.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/03/for&amp;while-statement.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/02/operator.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usinuniverse.github.io/2017/10/01/variable&amp;constant.html</loc>
+  <lastmod>2018-04-18T13:36:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
