@@ -17,7 +17,7 @@ layout: post
 
 <img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/18-04-19/01.png?raw=true">
 
-* 위 그림같은 경우에 View B가 기울어지지 않았다고 생각해보자.
+* 먼저 위 그림의 상황에서 View B가 기울어지지 않았다고 생각해보자.
 * 이런 경우에 View B의 frame과 bounds를 이용한 값을 비교해보면 다음과 같다.
 
 ```swift
