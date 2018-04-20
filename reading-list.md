@@ -1,7 +1,7 @@
 ---
 title: Profile
 layout: "page"
-icon: fa-book
+icon: fa-user
 order: 3
 ---
 
