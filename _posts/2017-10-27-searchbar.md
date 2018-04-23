@@ -1,5 +1,5 @@
 ---
-title: 서비차 설정하기
+title: 서치바 설정하기
 layout: post
 ---
 
