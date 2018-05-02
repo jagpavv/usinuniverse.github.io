@@ -147,7 +147,7 @@ a 함수 입니다.
 * 비동기 방식으로 실행하되, 10초 뒤에 해당함수를 실행하는 방법
 
 ```swift
-// 지금(.now()) 더하기 10초. 즉 지금부터 10초 후 self.b 실행
+// 지금(.now()) 더하기 10초. 즉 지금부터 10초 후 self.a 실행
 DispatchQueue.global().asyncAfter(deadline: .now() + 10) {
     self.a()
 }
