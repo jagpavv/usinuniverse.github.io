@@ -8,7 +8,7 @@ hide: true
 
 ### UI 구현
 
-[![Chatting](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/project%20images/08/01.png?raw=true)](https://vimeo.com/271657271)
+[![MusicPlayer](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/project%20images/08/01.png?raw=true)](https://vimeo.com/271657271)
 
 * 클릭하시면 동영상을 감상하실 수 있습니다.
 
