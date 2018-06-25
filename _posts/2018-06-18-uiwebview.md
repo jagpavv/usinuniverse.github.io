@@ -142,12 +142,35 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpe
         }
         
         return true
-    }
+}
 ```
 
 ### 실행 결과
 
 <img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/18-06-18/06.png?raw=true">
+
+### 제이쿼리 받는 방법
+
+```swift
+func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        var queryData: [String: String]?
+        
+        if let query = url.query {
+            let queryArray = query.split { $0 == "&"}.map(String.init)
+            var paramDict: [String: String] = [:]
+            for queryParameter in queryArray {
+                let keyValueArray = queryParameter.split{$0 == "="}.map(String.init)
+                if let key = keyValueArray.first {
+                    if let value = keyValueArray.last {
+                        if let decodingValue = value.removingPercentEncoding {
+                            paramDict.updateValue(decodingValue, forKey: key)
+                        }
+                    }
+                }
+            }
+            queryData = paramDict
+}
+```
 
 ---
 
