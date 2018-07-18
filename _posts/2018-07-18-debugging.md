@@ -102,21 +102,25 @@ extension ViewController: UITableViewDataSource {
 
 * 이 기능은 다음 Breakpoint로 이동하게 한다.
 * 이때 다음 Breakpoint가 없다면 더 이상 중단되지 않는다.
+
 <img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/18-07-18/03.gif?raw=true">
 
 ### Step over
 
 * 이 기능은 굳이 여러개의 Breakpoint를 추가하지 않더라도 다음 라인의 코드에서 자동으로 중단된다.
+
 <img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/18-07-18/04.gif?raw=true">
 
 ### Step into
 
 * 이 기능은 해당 라인의 코드에서 사용되는 메서드나 변수를 디버깅할 수 있게 한다.
+
 <img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/18-07-18/05.gif?raw=true">
 
 ### Step out
 
 * Step into와 반대 기능
+
 <img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/18-07-18/06.gif?raw=true">
 
 ---
@@ -124,7 +128,9 @@ extension ViewController: UITableViewDataSource {
 ### 기타 팁
 
 * 다음처럼 Share Breakpoint로 다른 팀원과 Breakpoint를 공유할 수 있다.
+
 <img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/18-07-18/07.gif?raw=true">
 
 * 또는 앱을 시작하자마자 발생하는 Exeption error를 디버깅하기 위해서 Exeption breakpoint를 만들 수도 있다.
+
 <img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/18-07-18/08.gif?raw=true">
