@@ -30,6 +30,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
+# Jekyll configuration
+markdown: kramdown
+# kramdown : markdown의 개조판.
+# markdown에서 불편한 사항을 개선한 형태.
+
+highlighter: rouge
+# text highlighter로 rouge이용
+# 2016.02월 이후로 syntax highlighter는 rouge만 지원.
+# Pygments 사용불가.
+
 title: usinuniverse
 subtitle: iOS 개발 이야기
 description: >- # this means to ignore newlines until "baseurl:"
