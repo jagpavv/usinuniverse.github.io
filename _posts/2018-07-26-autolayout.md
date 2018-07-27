@@ -5,7 +5,7 @@ layout: post
 
 # 코드로 만드는 auto layout
 
-### 1. 너비, 높이 고정
+### 1. 너비, 높이 고정 (frame-based)
 
 ```swift
 // 1번 방법
@@ -29,7 +29,7 @@ self.view.addSubview(blackView)
 
 <img src="https://github.com/usinuniverse/usinuniverse.github.io/blob/master/assets/images/posting%20images/18-07-26/01.png?raw=true">
 
-### 2. 제약 고정
+### 2. 제약 고정 (auto layout)
 
 ```swift
 let blackView = UIView()
