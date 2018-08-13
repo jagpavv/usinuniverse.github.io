@@ -441,11 +441,11 @@
 		@include vendor('transition', 'background-color 0.35s ease-in-out');
 
 		&:hover {
-			background-color: #666666;
+			background-color: #333333;
 		}
 
 		&:active {
-			background-color: #333333;
+			background-color: #666666;
 		}
 	}
 
