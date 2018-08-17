@@ -2,7 +2,7 @@
 
 ### Portfolio
 
-* [요새먼지](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-01-23-yosaemunge.md)
+* [요새먼지(출시)](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-01-23-yosaemunge.md)
 * [채팅 앱](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-04-26-chatting.md)
 * [앨범 앱](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-13-myalbum.md)
 * [날씨 앱](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-07-18-wheater.md)
