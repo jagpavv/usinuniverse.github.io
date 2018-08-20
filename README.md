@@ -79,4 +79,5 @@
 * [스위프트 고차함수 사용법](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-07-24-high-order-function.mdd)
 * [코드로 만드는 auto layout](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-07-26-autolayout.md)
 * [Today Extension 알아보기](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-09-todayextension.md)
-* [Alert과 Action Sheet 구분하기(iOS)](https://github.com/usinuniverse/usinuniverse.github.io/commit/a4b454eadbd18f9c0ac208b141a4ac4fe534f62e)
+* [Alert과 Action Sheet 구분하기(iOS)](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-13-alert2.md)
+* [Swift의 GCD 사용법](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-20-gcd.md)
