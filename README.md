@@ -76,7 +76,7 @@
 * [iOS 다국어 지원(localization)하는 방법](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-06-21-localization.md)
 * [Debugging](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-07-18-debugging.md)
 * [프로토콜 초기구현](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2017-10-10-class-structure.md)
-* [스위프트 고차함수 사용법](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-07-24-high-order-function.mdd)
+* [스위프트 고차함수 사용법](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-07-24-high-order-function.md)
 * [코드로 만드는 auto layout](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-07-26-autolayout.md)
 * [Today Extension 알아보기](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-09-todayextension.md)
 * [Alert과 Action Sheet 구분하기(iOS)](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-13-alert2.md)
