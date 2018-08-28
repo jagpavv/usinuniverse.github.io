@@ -82,3 +82,5 @@
 * [Alert과 Action Sheet 구분하기(iOS)](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-13-alert2.md)
 * [Swift의 GCD 사용법](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-20-gcd.md)
 * [애플 스타일의 마크업 주석 달기](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-24-markup.md)
+* [GCD 조합법(Swift)](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-28-gcdmix.md)
+
