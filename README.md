@@ -84,3 +84,4 @@
 * [애플 스타일의 마크업 주석 달기](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-24-markup.md)
 * [GCD 조합법(Swift)](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-28-gcdmix.md)
 * [Delegate pattern vs Closure pattern](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-29-closurepattern.md)
+* [컬렉션뷰 셀 나누기](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-31.collectionviewgrid.md)
