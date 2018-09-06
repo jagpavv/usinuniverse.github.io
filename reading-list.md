@@ -25,6 +25,7 @@ order: 3
 ### 세미나
 
 * Swift Korea MeetUp2 / 2017.12.13
+* if kakao / 2018.09.04
 
 ### 책
 
