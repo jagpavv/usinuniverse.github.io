@@ -43,6 +43,7 @@ class CustomKeyboard: UIView {
     
     // MARK: - Methods
     // MARK: Life Cycle
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -150,10 +151,12 @@ import UIKit
 class ViewController: UIViewController {
     // MARK: - Properties
     // MARK: Custom
+    
     var customKeyboard: CustomKeyboard?
     var keyboardHeight: CGFloat?
     
     // MARK: IBOutlet
+    
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var fakeTextField: UITextField!
     
@@ -161,6 +164,7 @@ class ViewController: UIViewController {
     
     // MARK: - Methods
     // MARK: View Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
