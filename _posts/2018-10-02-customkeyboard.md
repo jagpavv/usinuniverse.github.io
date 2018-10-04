@@ -32,9 +32,11 @@ protocol CustomKeyboardDelegate {
 class CustomKeyboard: UIView {
     // MARK: - Properties
     // MARK: Custom
+    
     var delegate: CustomKeyboardDelegate?
     
     // MARK: IBOutlet
+    
     @IBOutlet var mainView: UIView!
     @IBOutlet weak var emoticonScrollView: UIScrollView!
     @IBOutlet weak var tabScrollView: UIScrollView!
