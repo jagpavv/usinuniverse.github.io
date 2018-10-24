@@ -12,8 +12,8 @@ order: 3
 ### 경력
 
 * 링크닷츠 iOS 개발팀원 / 2018.03.08 ~
-> AJ 통합 차량 관리앱 'Bold' 참여<br>
-Hdac Wallet iOS 버전 개발
+> Hdac Wallet iOS 버전 개발<br>
+AJ 통합 차량 관리앱 'Bold' 참여
 * 요새먼지 앱스토어 출시 / 2018.01.23
 
 ### 교육
