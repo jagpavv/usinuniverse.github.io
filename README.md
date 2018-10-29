@@ -91,3 +91,4 @@
 * [contentInset과 contentOffset의 차이](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-09-03-contentoffsetinset.md)
 * [커스텀 키보드 만들기(iOS)](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-10-02-customkeyboard.md)
 * [FCM 사용법(iOS)](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-10-15-fcm.md)
+* [escaping closure](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-10-29-escapingclosure.md)
