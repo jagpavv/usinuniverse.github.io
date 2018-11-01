@@ -1,6 +1,6 @@
 # [iOS 개발 블로그 바로가기](https://usinuniverse.github.io)
 
-### Portfolio
+### Portfolio (최신순)
 
 * [Hdac Wallet(출시)](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-10-23-hdacwallet.md)
 * [요새먼지(출시)](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-01-23-yosaemunge.md)
@@ -16,7 +16,7 @@
 * [숫자 야구 게임](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2017-10-12-baseballgame.md)
 * [자판기 앱](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2017-09-20-vendingmachine.md)
 
-### Blog
+### Blog (오래된 순)
 
 * [변수와 상수](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2017-10-01-variable-constant.md)
 * [연산자](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2017-10-02-operator.md)
