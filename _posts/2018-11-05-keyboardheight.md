@@ -58,7 +58,7 @@ class ViewController: UIViewController {
     
     // MARK: IBAction
     
-    @IBAction func didTapButtn(_ sender: UIButton) {
+    @IBAction func didTapButton(_ sender: UIButton) {
         if let view = self.textField2.viewWithTag(99) {
             view.removeFromSuperview()
         }
