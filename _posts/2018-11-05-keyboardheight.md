@@ -15,6 +15,12 @@ layout: post
 * 여기서 `inputView`는 어떻게 사용자 기기의 키보드 높이를 얻을 수 있을까?
 * 이 경우에 방법은 아래와 같다.
 
+---
+
+* textField1은 일반적인 키보드가 올라오는 `UITextField`다.
+* textField2는 커스텀 키보드가 올라온다.
+* `didTapButton(_:)`은 textField2를 first responder로 만든다.
+
 ```swift
 import UIKit
 
@@ -47,7 +53,6 @@ class ViewController: UIViewController {
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardHeight = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.height {
             self.keyboardHeight = keyboardHeight
-            print(self.keyboardHeight)
         }
     }
     
@@ -75,3 +80,5 @@ class ViewController: UIViewController {
     
 }
 ```
+
+* 이렇게 하면 사용자의 키보드 높이가 변경되어도 이에 대응할 수 있다.
