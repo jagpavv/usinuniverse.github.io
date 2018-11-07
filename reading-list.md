@@ -25,7 +25,7 @@ AJ 통합 차량 관리앱 'Bold' 참여
 
 ### 세미나
 
-* LetSwift / 2018.11.06
+* Let'Swift / 2018.11.06
 * if kakao / 2018.09.04
 * Swift Korea MeetUp2 / 2017.12.13
 
