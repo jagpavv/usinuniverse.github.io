@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
     }
     
     // MARK: Custom
@@ -82,3 +82,37 @@ class ViewController: UIViewController {
 ```
 
 * 이렇게 하면 사용자의 키보드 높이가 변경되어도 이에 대응할 수 있다.
+
+---
+
+### 또 다른 방법
+
+```swift
+class ViewController: UIViewController {
+    // MARK: - Properties
+    // MARK: Custom
+    
+    var keyboardHeight: CGFloat?
+    
+    
+    
+    // MARK: - Methods
+    // MARK: View Life Cycle
+    
+    override func viewDidLoad() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let textField = UITextField()
+        UIApplication.shared.windows.first?.addSubview(textField)
+        textField.becomeFirstResponder() // 이 시점에 self.keyboardHeight에 값이 할당
+        textField.resignFirstResponder()
+        textField.removeFromSuperview()
+    }
+    
+}
+```
+
