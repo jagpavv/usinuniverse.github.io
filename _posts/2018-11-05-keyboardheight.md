@@ -17,6 +17,8 @@ layout: post
 
 ---
 
+### 첫번째 
+
 * textField1은 일반적인 키보드가 올라오는 `UITextField`다.
 * textField2는 커스텀 키보드가 올라온다.
 * `didTapButton(_:)`은 textField2를 first responder로 만든다.
@@ -81,11 +83,9 @@ class ViewController: UIViewController {
 }
 ```
 
-* 이렇게 하면 사용자의 키보드 높이가 변경되어도 이에 대응할 수 있다.
-
 ---
 
-### 또 다른 방법
+### 두번째 방법
 
 ```swift
 class ViewController: UIViewController {
@@ -116,3 +116,4 @@ class ViewController: UIViewController {
 }
 ```
 
+* 이렇게 하면 사용자의 키보드 높이가 변경되어도 이에 대응할 수 있다.
