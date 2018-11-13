@@ -4,6 +4,7 @@
 
 * [Hdac Wallet(출시)](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-10-23-hdacwallet.md)
 * [요새먼지(출시)](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-01-23-yosaemunge.md)
+* [채팅 앱2](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-11-13-chatting2.md)
 * [영화정보 앱](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-09-06-boxoffice.md)
 * [앨범 앱](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-13-myalbum.md)
 * [날씨 앱](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-07-18-wheater.md)
