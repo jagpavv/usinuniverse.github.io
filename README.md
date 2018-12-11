@@ -96,6 +96,4 @@
 * [앱에서 메시지 앱 띄우기](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-11-01-message.md)
 * [키보드가 나타나지 않고 키보드 높이만 얻는 방법](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-11-05-keyboardheight.md)
 * [weak self와 unowned self](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-11-27-self.md)
-* [WebRTC 이해하기]
-
-* [Alert과 Action Sheet 구분하기(iOS)](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-08-13-alert2.md)(https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-12-11-webrtc.md)
+* [WebRTC 이해하기](https://github.com/usinuniverse/usinuniverse.github.io/blob/master/_posts/2018-12-11-webrtc.md)
